@@ -1,0 +1,343 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Harit Suraparaju</title>
+<meta name="description" content="Harit Suraparaju, sophomore at Grafton High School. Chemistry research, science fair awards, piano, basketball and Sanskrit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&family=Tiro+Devanagari+Sanskrit&display=swap">
+<style>
+/* Layout: clean research portfolio — faint lab-notebook grid, single 1040px column, stacked section headers, full-width content */
+:root{
+  --paper:#F5F7FA; --grid:#E8EDF3; --sheet:#FFFFFF; --ink:#14213A; --muted:#566379; --rule:#D5DDE7;
+  --accent:#1F4FB8; --accent-soft:#E6EDFB; --gold:#9A6B10;
+  --c-school:#DCE6FB; --c-lab:#D6EEE5; --c-piano:#F2E0EA; --c-ball:#F7E6D6; --c-skt:#E8E2F7; --c-math:#F6EFCF; --c-rest:#E9EDF2;
+  --display:"Manrope", "Avenir Next", "Segoe UI", sans-serif;
+  --body:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --deva:"Tiro Devanagari Sanskrit", "Noto Serif Devanagari", serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0F1520; --grid:#161E2B; --sheet:#151D2A; --ink:#E5EAF2; --muted:#9BA8BC; --rule:#283447;
+  --accent:#86A8F5; --accent-soft:#1C2A48; --gold:#E0B456;
+  --c-school:#22335A; --c-lab:#1C3F35; --c-piano:#40263A; --c-ball:#47331F; --c-skt:#312A52; --c-math:#3F391C; --c-rest:#212B3A;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0F1520; --grid:#161E2B; --sheet:#151D2A; --ink:#E5EAF2; --muted:#9BA8BC; --rule:#283447;
+  --accent:#86A8F5; --accent-soft:#1C2A48; --gold:#E0B456;
+  --c-school:#22335A; --c-lab:#1C3F35; --c-piano:#40263A; --c-ball:#47331F; --c-skt:#312A52; --c-math:#3F391C; --c-rest:#212B3A;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;color:var(--ink);font-family:var(--body);font-size:1.06rem;line-height:1.65;padding-inline:20px;
+  background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:32px 32px}
+.wrap{max-width:1040px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15;letter-spacing:-.015em}
+p{margin:0}
+.label{font-family:var(--display);font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+em.k{font-style:normal;color:var(--accent);font-weight:600}
+
+/* top bar */
+header.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);margin-inline:-20px;padding:12px 20px}
+header.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px 20px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:800;font-size:1rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
+.mark span{display:inline-grid;place-items:center;width:30px;height:30px;background:var(--ink);color:var(--paper);font-size:.8rem;border-radius:4px}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:4px 20px;margin:0;padding:0}
+nav a{font-family:var(--display);font-weight:600;font-size:.85rem;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+
+/* hero */
+.hero{padding-block:64px 52px;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,7.5vw,4.8rem);font-weight:800;letter-spacing:-.035em;line-height:1;margin-top:14px}
+.hero h1 span{color:var(--accent)}
+.hero .lede{margin-top:22px;font-size:1.18rem;max-width:54ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{font-family:var(--display);font-weight:600;font-size:.8rem;border:1px solid var(--rule);background:var(--sheet);padding:4px 12px;border-radius:999px;color:var(--muted)}
+
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:22px;min-width:0}
+.hero .card{border-top:3px solid var(--accent)}
+.eq{font-family:var(--mono);font-size:clamp(.8rem,2.2vw,.96rem);margin-top:12px;overflow-x:auto;white-space:nowrap;padding-bottom:2px}
+.card svg{width:100%;height:auto;display:block;margin-top:12px}
+.card .cap{font-size:.9rem;color:var(--muted);margin-top:10px}
+
+/* sections */
+section{padding-block:60px;border-top:1px solid var(--rule)}
+.head{display:grid;gap:8px;margin-bottom:28px}
+.head h2{font-size:clamp(1.75rem,4vw,2.4rem);font-weight:800}
+.head p:not(.label){color:var(--muted);max-width:68ch}
+.body{display:block}
+.body > *{min-width:0}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:32px;align-items:start}
+.prose{display:grid;gap:14px;max-width:64ch}
+.facts{display:grid;border:1px solid var(--rule);border-radius:6px;background:var(--sheet);overflow:hidden}
+.fact{padding:12px 16px;border-bottom:1px solid var(--rule);display:grid;gap:2px}
+.fact:last-child{border-bottom:0}
+.fact b{font-family:var(--display);font-weight:700;font-size:1rem}
+
+/* time */
+.time-intro{display:grid;gap:24px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;counter-reset:r}
+.rule{padding:14px 16px 14px 52px;position:relative;border:1px solid var(--rule);border-radius:6px;background:var(--sheet)}
+.rule::before{counter-increment:r;content:counter(r,decimal-leading-zero);position:absolute;left:16px;top:15px;font-family:var(--mono);font-size:.8rem;color:var(--accent)}
+.rule h3{font-size:1rem;font-weight:700}
+.rule p{font-size:.94rem;color:var(--muted);margin-top:2px}
+
+
+
+/* research */
+.projects{display:grid}
+.proj{display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;padding-block:28px;border-top:1px solid var(--rule)}
+.proj:first-child{border-top:0;padding-top:0}
+.proj .yr{font-family:var(--display);font-weight:800;font-size:1.5rem;line-height:1}
+.proj .yr small{display:block;font-weight:700;font-size:.68rem;color:var(--muted);margin-top:8px;letter-spacing:.1em}
+.proj h3{font-size:1.25rem;font-weight:700;max-width:44ch}
+.proj .q{margin-top:10px;max-width:66ch}
+.proj .learned{margin-top:10px;font-style:italic;color:var(--muted)}
+.awards-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.award{font-family:var(--display);font-weight:700;font-size:.78rem;padding:4px 12px;border-radius:999px;color:var(--gold);border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);background:color-mix(in srgb,var(--gold) 10%,transparent)}
+
+/* awards */
+.tbl{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--sheet)}
+table{width:100%;border-collapse:collapse;font-size:.98rem}
+th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-family:var(--display);font-weight:700;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:var(--paper)}
+td:first-child{font-family:var(--display);font-weight:600;font-size:.88rem;color:var(--muted);white-space:nowrap}
+td.a{font-family:var(--display);font-weight:700}
+.rank{display:inline-block;min-width:2.6em;color:var(--gold);font-weight:800}
+
+/* skills */
+.bench{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:8px}
+.el{aspect-ratio:1/1;max-width:100%;border:1px solid var(--rule);border-radius:4px;background:var(--sheet);padding:9px 11px;display:flex;flex-direction:column;justify-content:space-between;transition:border-color .15s,transform .15s}
+.el:hover{border-color:var(--accent);transform:translateY(-2px)}
+.el .n{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
+.el .s{font-family:var(--display);font-weight:800;font-size:1.75rem;line-height:1;letter-spacing:-.02em}
+.el .nm{font-family:var(--display);font-weight:600;font-size:.74rem;line-height:1.2}
+.el.lab{border-top:3px solid #3E9C7E} .el.res{border-top:3px solid var(--accent)}
+.el.lab .s{color:#2F8669}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .el.lab .s{color:#6FD1AE}}
+:root[data-theme="dark"] .el.lab .s{color:#6FD1AE}
+.el.res .s{color:var(--accent)}
+.bench-label{margin:26px 0 10px}
+.bench-label:first-child{margin-top:0}
+
+/* beyond */
+.interests{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px}
+.int{border-top:2px solid var(--ink);padding-top:14px;display:grid;gap:8px;align-content:start}
+.int h3{font-size:1.15rem;font-weight:700}
+.int p{color:var(--muted);font-size:.97rem}
+.deva{font-family:var(--deva);font-size:1.45rem;color:var(--accent);line-height:1.3}
+
+/* next */
+.next blockquote{margin:0;font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;letter-spacing:-.02em;max-width:26ch}
+.next blockquote span{color:var(--accent)}
+.next p{margin-top:16px;max-width:62ch;color:var(--muted)}
+
+footer{border-top:1px solid var(--rule);padding-block:24px 40px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-family:var(--display);font-size:.82rem;font-weight:600;color:var(--muted)}
+
+@media (max-width:800px){
+  .hero,.about{grid-template-columns:1fr;gap:28px}
+  .hero{padding-block:44px 36px}
+  .proj{grid-template-columns:1fr;gap:8px}
+  .bench{grid-template-columns:repeat(auto-fill,minmax(96px,1fr))}
+  .el .s{font-size:1.45rem}
+  section{padding-block:44px}
+}
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="#top"><span>HS</span>Harit Suraparaju</a>
+    <nav aria-label="Sections"><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#time">Time management</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#beyond">Interests</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <p class="label">Student researcher · Grafton High School · Class of 2029</p>
+      <h1>Harit<br><span>Suraparaju</span></h1>
+      <p class="lede">I'm a sophomore interested in making chemistry <em class="k">cleaner, faster and more efficient</em>. Over three years of science fair research I have worked on hydrogen fuel cells, algae-based biofuels and the electrochemical conversion of carbon dioxide. Alongside research, I play piano and basketball, study Sanskrit, and competed on a regional-winning MATHCOUNTS team.</p>
+      <div class="chips">
+        <span>Chemistry</span><span>Electrochemistry</span><span>Biochemistry</span><span>Piano</span><span>Basketball</span><span>Sanskrit</span>
+      </div>
+    </div>
+    <aside class="card" aria-label="Current research focus">
+      <p class="label">Most recent project · Grade 9</p>
+      <div class="eq">CO<sub>2</sub> + H<sub>2</sub>O + 2e<sup>−</sup> → HCOO<sup>−</sup> + OH<sup>−</sup></div>
+      <svg viewBox="0 0 300 124" role="img" aria-label="Diagram of an electrochemical cell reducing carbon dioxide to formate at a nanoflower-coated cathode">
+        <rect x="20" y="24" width="260" height="88" rx="3" fill="none" stroke="var(--rule)" stroke-width="1.5"/>
+        <rect x="21" y="62" width="258" height="49" fill="var(--accent-soft)"/>
+        <rect x="60" y="8" width="10" height="92" fill="var(--accent)"/>
+        <rect x="230" y="8" width="10" height="92" fill="var(--muted)"/>
+        <g fill="var(--gold)">
+          <circle cx="79" cy="72" r="4.5"/><circle cx="81" cy="86" r="3.5"/><circle cx="78" cy="58" r="3"/>
+        </g>
+        <text x="65" y="122" fill="var(--muted)" font-family="Manrope, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">cathode</text>
+        <text x="235" y="122" fill="var(--muted)" font-family="Manrope, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">anode</text>
+        <text x="152" y="84" fill="var(--ink)" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">CO₂ → formate</text>
+        <text x="152" y="100" fill="var(--muted)" font-family="Manrope, sans-serif" font-size="9" font-weight="600" text-anchor="middle">nanoflower catalyst on electrode</text>
+      </svg>
+      <p class="cap">Optimizing a nanoflower catalyst on the cathode to convert CO<sub>2</sub> into formate. First Place and Sanofi Award, WRSEF.</p>
+    </aside>
+  </div>
+
+  <section id="about">
+    <div class="head"><p class="label">About</p><h2>About me</h2></div>
+    <div class="body"><div class="about">
+      <div class="prose">
+        <p>I'm curious and motivated, and I enjoy seeing a project through from an idea to a result. I began competing in science fairs in seventh grade with a question about hydrogen fuel cells. Each project led to the next, and my interest has grown into energy and sustainability: how to store energy, how to produce fuel from biomass, and how to turn a greenhouse gas into something useful.</p>
+        <p>Research has taught me persistence. Experiments fail and data can be messy, so I've learned to design experiments from scratch, run titrations, electroplate electrodes, and keep analyzing until the results are meaningful. At the BioBuilder summer program I learned molecular biology techniques such as PCR and protein purification, which expanded my interest into biochemistry.</p>
+        <p>Outside the lab I play piano and basketball, study Sanskrit, and was part of the team that won first place at the Worcester Regional MATHCOUNTS competition. Balancing these activities has taught me to plan my time carefully.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><span class="label">School</span><b>Grafton High School</b></div>
+        <div class="fact"><span class="label">Grade</span><b>10th grade (sophomore)</b></div>
+        <div class="fact"><span class="label">Research</span><b>3 science fair projects in 3 years</b></div>
+        <div class="fact"><span class="label">Awards</span><b>4 science fair · 1 MATHCOUNTS</b></div>
+        <div class="fact"><span class="label">Goal</span><b>A career in research</b></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section id="time">
+    <div class="head">
+      <p class="label">Time management</p><h2>Managing my time</h2>
+      <p>School, research, piano, basketball and Sanskrit each need time every week. A few simple habits help me keep up with all of them.</p>
+    </div>
+    <div class="time-intro">
+      <div class="rules" aria-label="Time management habits">
+        <div class="rule"><h3>Plan the week ahead</h3><p>On Sundays I look at tests, games and lessons coming up.</p></div>
+        <div class="rule"><h3>Homework first</h3><p>I finish it after school, which frees up evenings for practice.</p></div>
+        <div class="rule"><h3>Practice in short sessions</h3><p>A little piano and Sanskrit most days rather than all at once.</p></div>
+        <div class="rule"><h3>Spread out projects</h3><p>Science fair work is split into weekly steps across the school year.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="head">
+      <p class="label">Research</p><h2>Three years, three projects</h2>
+      <p>Each project grew out of the one before. All three ask the same underlying question: how do you get the most useful chemistry out of a system?</p>
+    </div>
+    <div class="projects">
+      <article class="proj">
+        <p class="yr">Grade 9<small>ELECTROCHEMISTRY · CATALYSIS</small></p>
+        <div>
+          <h3>Optimizing nanoflower electrode catalysis for converting carbon dioxide into formate</h3>
+          <p class="q">I worked on an electrochemical cell that reduces CO<sub>2</sub> to formate, a useful chemical feedstock. I focused on improving the electrode catalyst using nanoflower structures, whose high surface area provides more active sites for the reaction.</p>
+          <p class="learned">Key takeaway: small changes to a surface can have a large effect on performance.</p>
+          <div class="awards-row"><span class="award">1st Place · Sanofi Award · WRSEF</span></div>
+        </div>
+      </article>
+      <article class="proj">
+        <p class="yr">Grade 8<small>BIOFUELS · BIOCHEMISTRY</small></p>
+        <div>
+          <h3>Enzymatic vs. mechanical degradation of algae for ethanol production</h3>
+          <p class="q">Algae can be broken down and fermented into ethanol. I compared enzymatic and mechanical methods of breaking down algae to determine which made ethanol production more efficient.</p>
+          <p class="learned">Key takeaway: well-designed controls are what make a comparison trustworthy.</p>
+          <div class="awards-row"><span class="award">3rd Place · MSEF</span></div>
+        </div>
+      </article>
+      <article class="proj">
+        <p class="yr">Grade 7<small>ENERGY · ELECTROCHEMISTRY</small></p>
+        <div>
+          <h3>How electrolyte concentration affects the efficiency of a hydrogen fuel cell</h3>
+          <p class="q">In my first project, I tested how changing the electrolyte concentration in a hydrogen fuel cell affects its efficiency. This is where my interest in electrochemistry began.</p>
+          <p class="learned">Key takeaway: a clear, focused question matters more than complex equipment.</p>
+          <div class="awards-row"><span class="award">Cabot Chemistry Award · MSEF</span><span class="award">2nd Place · MSEF</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="awards">
+    <div class="head">
+      <p class="label">Awards</p><h2>Honors &amp; competitions</h2>
+      <p>Recognition at the regional and state science and engineering fairs, plus a regional MATHCOUNTS team win.</p>
+    </div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th scope="col">Grade</th><th scope="col">Award</th><th scope="col">Competition</th></tr></thead>
+        <tbody>
+          <tr><td>Grade 9</td><td class="a"><span class="rank">1st</span>Sanofi First Place Award</td><td>Worcester Regional Science &amp; Engineering Fair (WRSEF)</td></tr>
+          <tr><td>Grade 8</td><td class="a"><span class="rank">1st</span>Team First Place, Worcester Regional</td><td>MATHCOUNTS, as a member of the math team</td></tr>
+          <tr><td>Grade 8</td><td class="a"><span class="rank">3rd</span>Third Place Award</td><td>Massachusetts State Science &amp; Engineering Fair (MSEF)</td></tr>
+          <tr><td>Grade 7</td><td class="a"><span class="rank">★</span>Cabot Chemistry Award</td><td>MSEF</td></tr>
+          <tr><td>Grade 7</td><td class="a"><span class="rank">2nd</span>Second Place Award</td><td>MSEF</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="head">
+      <p class="label">Skills</p><h2>Laboratory skills</h2>
+      <p>Techniques I have performed hands-on, arranged like a periodic table. Lab techniques come from the BioBuilder summer program; research skills come from my own projects.</p>
+    </div>
+    <div class="body"><div>
+      <p class="label bench-label">BioBuilder lab techniques</p>
+      <div class="bench">
+        <div class="el lab"><span class="n">01</span><span class="s">Pcr</span><span class="nm">Polymerase chain reaction</span></div>
+        <div class="el lab"><span class="n">02</span><span class="s">Mp</span><span class="nm">Micropipetting</span></div>
+        <div class="el lab"><span class="n">03</span><span class="s">Sp</span><span class="nm">Spectrophotometry</span></div>
+        <div class="el lab"><span class="n">04</span><span class="s">Sds</span><span class="nm">SDS-PAGE</span></div>
+        <div class="el lab"><span class="n">05</span><span class="s">Pp</span><span class="nm">Protein purification</span></div>
+        <div class="el lab"><span class="n">06</span><span class="s">Cc</span><span class="nm">Microbial cell culture</span></div>
+        <div class="el lab"><span class="n">07</span><span class="s">Re</span><span class="nm">Restriction enzyme analysis</span></div>
+        <div class="el lab"><span class="n">08</span><span class="s">Dn</span><span class="nm">DNA isolation</span></div>
+        <div class="el lab"><span class="n">09</span><span class="s">Ei</span><span class="nm">Enzyme induction</span></div>
+        <div class="el lab"><span class="n">10</span><span class="s">Ba</span><span class="nm">Bradford assay</span></div>
+        <div class="el lab"><span class="n">11</span><span class="s">Ge</span><span class="nm">Gel electrophoresis</span></div>
+      </div>
+      <p class="label bench-label">Research &amp; chemistry skills</p>
+      <div class="bench">
+        <div class="el res"><span class="n">12</span><span class="s">Rs</span><span class="nm">Research</span></div>
+        <div class="el res"><span class="n">13</span><span class="s">Ac</span><span class="nm">Analytical chemistry</span></div>
+        <div class="el res"><span class="n">14</span><span class="s">Ld</span><span class="nm">Lab design</span></div>
+        <div class="el res"><span class="n">15</span><span class="s">Sc</span><span class="nm">Surface chemistry</span></div>
+        <div class="el res"><span class="n">16</span><span class="s">Ti</span><span class="nm">Titration</span></div>
+        <div class="el res"><span class="n">17</span><span class="s">Ct</span><span class="nm">Catalysis</span></div>
+        <div class="el res"><span class="n">18</span><span class="s">Ep</span><span class="nm">Electroplating</span></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section id="beyond">
+    <div class="head"><p class="label">Interests</p><h2>Beyond the lab</h2></div>
+    <div class="interests">
+      <div class="int"><p class="label">Science</p><h3>Chemistry &amp; biochemistry</h3><p>Energy, catalysis and the molecular side of chemistry are the topics I keep returning to.</p></div>
+      <div class="int"><p class="label">Music</p><h3>Piano</h3><p>Piano requires the same patience as lab work: practicing a difficult passage slowly until it comes together.</p></div>
+      <div class="int"><p class="label">Sport</p><h3>Basketball</h3><p>I value the teamwork and quick decision-making, and it's a good reset after a long day.</p></div>
+      <div class="int"><p class="label">Language</p><h3>Sanskrit</h3><p class="deva" lang="sa">विद्या ददाति विनयम्</p><p>"Knowledge gives humility." I study Sanskrit, one of the oldest documented languages.</p></div>
+    </div>
+  </section>
+
+  <section id="next" class="next">
+    <div class="head"><p class="label">Looking ahead</p></div>
+      <div>
+        <blockquote>My goal is a career in <span>research</span>.</blockquote>
+        <p>I want to keep working on problems where chemistry meets energy and the environment, building on what I've learned in catalysis, electrochemistry and biochemical lab techniques.</p>
+      </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>Harit Suraparaju · Grafton High School · Grafton, MA</span>
+  <span>Updated October 2026</span>
+</footer>
+
+</body></html>
